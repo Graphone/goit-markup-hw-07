@@ -78,6 +78,11 @@ a {
   margin: 0 auto;
 }
 
+.list {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* header */
 
 .page-header {
@@ -89,7 +94,7 @@ a {
   display: flex;
 }
 
-.line {
+.page-header--line {
   border-bottom: 1px solid #ececec;
 }
 
@@ -97,7 +102,7 @@ a {
   width: 1200px;
 }
 
-.main-logo {
+.logo {
   font-family: var(--accent-font);
   font-size: 26px;
   /* font-weight: 700px; */
@@ -105,38 +110,35 @@ a {
   word-spacing: -0.4ch;
 }
 
-.logo-item {
+.logo__item {
   color: var(--accent-color);
 }
 
 /* navigation */
 
-.main-nav {
+.site-nav {
   display: flex;
   align-items: center;
   min-height: 80px;
 }
 
-.nav-list {
+.site-nav__list {
   display: flex;
   margin-left: 93px;
 }
 
-.list-item {
+.site-nav__item {
   color: var(--font-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
 }
-.nav-list .list-item {
+
+.site-nav__item + .site-nav__item {
+  margin-left: 50px;
 }
 
-.list {
-  margin: 0px;
-  padding: 0px;
-}
-
-.nav-link {
+.site-nav__link {
   padding-top: 32px;
   padding-bottom: 32px;
   cursor: pointer;
@@ -144,8 +146,9 @@ a {
   transition: color 250ms var(--timing-function);
 }
 
-.nav-list .list-item + .list-item {
-  margin-left: 50px;
+.site-nav__list .site-nav__link:hover,
+.site-nav__list .site-nav__link:focus {
+  color: var(--accent-color);
 }
 
 .contacts-list {
@@ -153,13 +156,8 @@ a {
   margin-left: auto;
 }
 
-.contacts-list .item + .item {
+.contacts-list__item + .contacts-list__item {
   margin-left: 50px;
-}
-
-.nav-list .nav-link:hover,
-.nav-list .nav-link:focus {
-  color: var(--accent-color);
 }
 
 .contacts-list {
@@ -173,12 +171,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-.contacts-list a:hover,
-.contacts-list a:focus {
-  color: var(--accent-color);
-}
-
-.contact-link {
+.contacts-link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -187,13 +180,18 @@ a {
   transition: color 250ms var(--timing-function);
 }
 
-.active {
+.contacts-list .contacts-list__link:hover,
+.contacts-list .contacts-list__link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav__link--active {
   position: relative;
 
   color: var(--accent-color);
 }
 
-.active::after {
+.site-nav__link--active::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -206,7 +204,7 @@ a {
   background-color: var(--accent-color);
 }
 
-.mail-icon {
+.contacts-list__mail-icon {
   display: inline-flex;
   width: 16px;
   height: 12px;
@@ -215,7 +213,7 @@ a {
   fill: currentColor;
 }
 
-.tel-icon {
+.contacts-list__tel-icon {
   display: inline-flex;
   width: 10px;
   height: 16px;
@@ -224,10 +222,10 @@ a {
   fill: currentColor;
 }
 
-.mail-button:hover,
-.mail-button:focus,
-.tel-button:hover,
-.tel-button:focus {
+.contacts-list__mail-icon:hover,
+.contacts-list__mail-icon:focus,
+.contacts-list__tel-icon:hover,
+.contacts-list__tel-icon:focus {
   fill: var(--accent-color);
 }
 

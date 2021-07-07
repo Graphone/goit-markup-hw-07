@@ -15,41 +15,43 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+  <!-- Project Body -->
   <body>
+    <!-- Header -->
     <header class="page-header">
       <div class="container">
-        <!-- navigation -->
-        <nav class="main-nav">
-          <a href="index.html" class="main-logo">
-            <span class="logo-item">
+        <!-- Navigation -->
+        <nav class="site-nav">
+          <a href="index.html" class="logo">
+            <span class="logo__item">
               Web
             </span>
             Studio
           </a>
-          <ul class="nav-list">
-            <li class="list-item">
-              <a class="nav-link active" href="./index.html">Студия</a>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="./index.html">Студия</a>
             </li>
-            <li class="list-item">
-              <a class="nav-link" href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="list-item">
-              <a class="nav-link">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts-list">
-          <li class="item">
-            <a class="contact-link" href="mailto:info@devstudio.com">
-              <svg class="mail-icon">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="mailto:info@devstudio.com">
+              <svg class="contacts-list__mail-icon">
                 <use href="./images/sprite.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a class="contact-link" href="tel:+380961111111">
-              <svg class="tel-icon">
+          <li class="contacts-list__item">
+            <a class="contacts-list__link" href="tel:+380961111111">
+              <svg class="contacts-list__tel-icon">
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -58,8 +60,9 @@
         </ul>
       </div>
     </header>
-    <!-- main content -->
+    <!-- Main Content -->
     <main>
+      <!-- Hero Section -->
       <section class="hero">
         <div class="hero-container">
           <h1 class="hero-title">
@@ -71,6 +74,7 @@
         </div>
       </section>
       <section class="feature-section">
+        <!-- About Section -->
         <!-- <h2 class="description-title">Наши сильные стороны</h2> -->
         <div class="container">
           <ul class="feature-list">
@@ -125,7 +129,7 @@
           </ul>
         </div>
       </section>
-      <!-- "what we do" section -->
+      <!-- "What We Do" Section -->
       <section>
         <div class="container">
           <h2 class="about-title">Чем мы занимаемся</h2>
@@ -174,10 +178,13 @@
           </ul>
         </div>
       </section>
+      <!-- Team Section -->
       <section class="team centered">
         <div class="container">
           <h2 class="about-title">Наша команда</h2>
+          <!-- Team Card Set -->
           <ul class="about-list">
+            <!-- Team member one -->
             <li class="item decorated">
               <img
                 class="card-image"
@@ -189,6 +196,7 @@
               <div class="team-card">
                 <h3 class="title-name">Игорь Демьяненко</h3>
                 <p class="profession">Product Designer</p>
+                <!-- Social Media -->
                 <ul class="icon-list">
                   <li class="team-item">
                     <a class="team-link" href="">
@@ -221,6 +229,7 @@
                 </ul>
               </div>
             </li>
+            <!-- Team member two -->
             <li class="item decorated">
               <img
                 class="card-image"
@@ -232,6 +241,7 @@
               <div class="team-card">
                 <h3 class="title-name">Ольга Репина</h3>
                 <p class="profession">Frontend Developer</p>
+                <!-- Social Media -->
                 <ul class="icon-list">
                   <li class="team-item">
                     <a class="team-link" href="">
@@ -264,6 +274,7 @@
                 </ul>
               </div>
             </li>
+            <!-- Team member three -->
             <li class="item decorated">
               <img
                 class="card-image"
@@ -275,6 +286,7 @@
               <div class="team-card">
                 <h3 class="title-name">Николай Тарасов</h3>
                 <p class="profession">Marketing</p>
+                <!-- Social Media -->
                 <ul class="icon-list">
                   <li class="team-item">
                     <a class="team-link" href="">
@@ -307,6 +319,7 @@
                 </ul>
               </div>
             </li>
+            <!-- Team member four -->
             <li class="item decorated">
               <img
                 class="card-image"
@@ -318,6 +331,7 @@
               <div class="team-card">
                 <h3 class="title-name">Михаил Ермаков</h3>
                 <p class="profession">UI Designer</p>
+                <!-- Social Media -->
                 <ul class="icon-list">
                   <li class="team-item">
                     <a class="team-link" href="">
@@ -353,6 +367,7 @@
           </ul>
         </div>
       </section>
+      <!-- Clients section -->
       <section class="clients-section">
         <div class="container">
           <h2 class="about-title">Постоянные клиенты</h2>
@@ -403,6 +418,7 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
         <div class="logo-adress">
@@ -414,6 +430,7 @@
               Studio
             </p>
           </a>
+          <!-- Address -->
           <address>
             <div>
               <ul class="address-list">
@@ -433,6 +450,7 @@
               </ul>
             </div>
         </div>
+          <!--Social Media  -->
           <div class="social-container">
             <p class="social-title">Присоединяйтесь</p>
             <ul class="social-list">
@@ -467,6 +485,7 @@
             </ul>
           </div>
         </address>
+        <!-- Follow -->
         <div class="subscribe-container">
           <p class="subscribe-text">Подпишитесь на рассылку</p>
           <form class="subscribe-form" name="subscribe-form" autocomplete="on">
@@ -485,7 +504,9 @@
         </div>
       </div>
     </footer>
+    <!-- Backdrop -->
     <div data-modal class="backdrop is-hidden">
+      <!-- Modal Window -->
       <div class="modal">
         <div class="modal-container">
           <b class="modal-text">Оставьте свои данные, мы вам перезвоним</b>
@@ -538,6 +559,7 @@
         </div>
       </div>
     </div>
+    <!-- JavaScript -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
