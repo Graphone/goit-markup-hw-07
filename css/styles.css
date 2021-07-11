@@ -448,7 +448,7 @@ a {
 
 /* Team Social Media */
 
-.social-media__list {
+.social-media {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -585,7 +585,11 @@ a {
 }
 /* Social media Footer */
 
-.social-media__title {
+.footer__sm-wrapper {
+  margin-left: 70px;
+}
+
+.footer__sm-title {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -597,11 +601,7 @@ a {
   color: var(--white-color);
 }
 
-.social-media {
-  margin-left: 70px;
-}
-
-.social-media__list--footer {
+.social-media--footer {
   padding: 0px;
 }
 
@@ -611,8 +611,9 @@ a {
 
 .social-media__item {
   display: flex;
-  transition: background-color 250ms var(--timing-function);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .social-media__link--footer {
