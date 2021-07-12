@@ -1,0 +1,11 @@
+.page-header {
+  background: var(--white-color);
+
+  &--line {
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.page-header__container {
+  display: flex;
+}
