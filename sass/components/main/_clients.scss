@@ -19,9 +19,7 @@
 }
 
 .clients-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centredFlex();
   width: 100%;
   height: 100%;
   border: 1px solid;
@@ -29,9 +27,7 @@
 
   border-color: #afb1b8;
 
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: $timingFunction;
+  transition: border-color 250ms $timingFunction;
 
   &:hover,
   &:hover svg,
@@ -47,9 +43,7 @@
   height: 60px;
   fill: #afb1b8;
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: $timingFunction;
+  transition: fill 250ms $timingFunction;
 
   &:hover {
     fill: inherit;

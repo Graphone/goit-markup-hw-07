@@ -9,6 +9,15 @@
   }
 }
 
+.social-media__item {
+  display: flex;
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
 .social-media__link {
   @include centredFlex();
 
@@ -18,9 +27,9 @@
 
   fill: #afb1b8;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: $whiteColor;
 
-  transition: background-color 250ms $timingFunction;
+  transition: fill 250ms $timingFunction, background-color 250ms $timingFunction;
 
   &:hover,
   &:focus {
@@ -38,24 +47,7 @@
 
   &--footer:hover,
   &--footer:focus {
-    fill: $whiteColor;
     background-color: $accentColor;
-  }
-}
-
-.social-media__item {
-  display: flex;
-  border-radius: 50%;
-
-  transition: background-color 250ms $timingFunction;
-
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-  &:hover,
-  &:focus {
-    background-color: $accentColor;
-    border-radius: 50%;
   }
 }
 
